@@ -23,7 +23,7 @@ export default function Landing() {
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <div className="text-4xl font-bold text-center ">Connect your <span className="text-blue-600">Solana</span> wallet and <span className="text-blue-600">Air drop</span>
+                <div className="text-normal md:text-4xl font-bold text-center ">Connect your <span className="text-blue-600">Solana</span> wallet and <span className="text-blue-600">Air drop</span>
         <p className="text-xl text-slate-600">Get Ready to Soar with Solana!</p>
         <MenuButtons/>
         </div>
@@ -151,48 +151,6 @@ export default function Landing() {
           </div>
         </section>
       </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-muted-foreground">&copy; 2024 Solana Airdropper. All rights reserved.</p>
-        <p className="text-xs text-muted-foreground">Design and devolped by Dipak Khade</p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link href="#" className="text-xs hover:underline underline-offset-4" prefetch={false}>
-            Terms of Service
-          </Link>
-          <Link href="#" className="text-xs hover:underline underline-offset-4" prefetch={false}>
-            Privacy Policy
-          </Link>
-          <Link href="#" className="text-xs hover:underline underline-offset-4" prefetch={false}>
-            Twitter
-          </Link>
-          <Link href="#" className="text-xs hover:underline underline-offset-4" prefetch={false}>
-            Discord
-          </Link>
-        </nav>
-      </footer>
     </div>
-  )
-}
-
-function CloudSunIcon(props:any) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M12 2v2" />
-      <path d="m4.93 4.93 1.41 1.41" />
-      <path d="M20 12h2" />
-      <path d="m19.07 4.93-1.41 1.41" />
-      <path d="M15.947 12.65a4 4 0 0 0-5.925-4.128" />
-      <path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z" />
-    </svg>
   )
 }

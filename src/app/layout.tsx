@@ -4,6 +4,7 @@ import "./globals.css";
 import Apppbar from "@/components/Appbar";
 import Providers from "./Providers";
 import { Toaster } from 'sonner'
+import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({
         <Apppbar/>
         <Toaster richColors position="top-left"/>
         {children}
+        <Footer/>
         </Providers>
         </body>
     </html>
