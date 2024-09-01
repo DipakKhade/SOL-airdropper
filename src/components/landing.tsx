@@ -100,7 +100,8 @@ export default function Landing() {
                 <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">FAQ</div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Frequently Asked Questions</h2>
               </div>
-              <div className="grid gap-4">
+              <div className="grid gap-4 lg:pl-12">
+                {/* @ts-ignore */}
                 <Accordion>
                   <AccordionItem value="what-is-solana-airdropper">
                     <AccordionTrigger>What is Solana Airdropper?</AccordionTrigger>
@@ -118,7 +119,7 @@ export default function Landing() {
                       <p>
                         Solana Airdropper works by continuously monitoring the Solana ecosystem for upcoming airdrops.
                         It analyzes the eligibility criteria for each airdrop and tracks your wallet activity to
-                        determine if you qualify. When a new airdrop is detected, you'll receive a notification with all
+                        determine if you qualify. When a new airdrop is detected, youll receive a notification with all
                         the details and instructions on how to claim it.
                       </p>
                     </AccordionContent>
@@ -139,8 +140,8 @@ export default function Landing() {
                     <AccordionContent>
                       <p>
                         Signing up for Solana Airdropper is quick and easy. All you need to do is visit our website and
-                        click the "Sign\n Up" button. You'll be prompted to connect your Solana wallet, and we'll start
-                        tracking your eligibility for upcoming airdrops right away. It's that simple!
+                        click the Sign Up button. Youll be prompted to connect your Solana wallet, and well start
+                        tracking your eligibility for upcoming airdrops right away. Its that simple!
                       </p>
                     </AccordionContent>
                   </AccordionItem>
