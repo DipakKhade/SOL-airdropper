@@ -1,5 +1,7 @@
 import { NextAuthOptions } from "next-auth"
 import GoogleProvider from "next-auth/providers/google";
+import db from '../lib/db'
+import { UserRound } from "lucide-react";
 
 export const othOptions : NextAuthOptions = ({
     providers:[
@@ -10,8 +12,15 @@ export const othOptions : NextAuthOptions = ({
     ],
 
     callbacks:{
-        async signIn (userinfo){
-            console.log(userinfo)
+        async signIn ({ user , account }){
+            console.log(user)
+            const new_user = await db.user.create({
+                data:{
+                    email:user.email ?? "",
+                    name:user.name ?? "",
+                    profileImage:user.image ?? ""
+                }
+            })
             return true
         }
 
