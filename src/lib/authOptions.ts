@@ -8,8 +8,10 @@ export const othOptions : NextAuthOptions = ({
         GoogleProvider({
             clientId:process.env.clientId ?? "",
             clientSecret: process.env.clientSecret ?? "" 
-         })
-    ],
+         }),
+        ],
+
+    secret: process.env.NEXTAUTH_SECRET || 'sec_next_auth',
 
     callbacks:{
         async signIn ({ user , account }){
